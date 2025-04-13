@@ -25,7 +25,7 @@ async def async_setup_entry(hass, config_entry):
 
     async def fetch_data():
         """Fetch JSON data from the okosvillanyora.local server."""
-        url = f"http://{host}:{port}/json"
+        url = f"http://192.168.31.20:8989//json"
         try:
             async with aiohttp.ClientSession() as session:
                 async with async_timeout.timeout(10):
